@@ -6,10 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "addAllFiles": "git add .",
-    "play": "node index.js",
-    "commitWithMessage": "git commit -m ",
-    "pushToGit": "git push -u origin main"
+    "pushToGit": "git add . && echo 'Enter Commit Message' && read message && git commit -m \"$message\" && git push -u origin main",
+    "play": "node index.js"
   },
   "keywords": [],
   "author": "",
