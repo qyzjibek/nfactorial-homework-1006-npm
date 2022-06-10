@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <style>
+        .light{
+            background-color: white;
+        }
+
+        .dark{
+            background-color: black;
+        }
+
+        #user-input {
+            margin-left: 20px;
+            width: 300px;
+        }
+    </style>
+
+</head>
+<body onload="setMode()">
+    <div class="btn-group my-2 ms-2 p-2" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-light" onclick="setLightMode() ">Set Light Mode</button>
+        <button type="button" class="btn btn-dark" onclick="setDarkMode() ">Set Dark Mode</button>
+      
+        <div class="btn-group button-group " role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Set Default Cookies
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><button type="button" class="btn btn-light" onclick="setCityCookie()">City</button></li>
+            <li><button type="button" class="btn btn-light" onclick="setCountryCookie()">Country</button></li>
+          </ul>
+        </div>
+
+        <div class="btn-group button-group " role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Delete Default Cookies
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <li><button type="button" class="btn btn-light" onclick="deleteCityCookie() ">City</button></li>
+              <li><button type="button" class="btn btn-light" onclick="deleteCountryCookie()">Country</button></li>
+            </ul>
+          </div>
+      </div>
+
+      <h2 style="margin-left: 20px; color:red">Create Cookie with username that expires after 1 Day</h2>
+      <div>
+           <input id="user-input"type="text" name="user">
+           <button type="button" class="btn btn-primary ms-2 p-0" style="height: 30px; align-self: center; vertical-align: center; width: 100px;" onclick="setUserCookie()"">Add</button>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+<script src="index.js"></script>
+</html>
