@@ -18,6 +18,11 @@
             margin-left: 20px;
             width: 300px;
         }
+
+        #input-container {
+            display: flex;
+            align-items: center;
+        }
     </style>
 
 </head>
@@ -47,8 +52,8 @@
           </div>
       </div>
 
-      <h2 style="margin-left: 20px; color:red">Create Cookie with username that expires after 1 Day</h2>
-      <div>
+      <p style="margin-left: 20px; color: crimson; font-size: 20px; ">Create Cookie with username that expires after 1 Day</p>
+      <div id="input-container">
            <input id="user-input"type="text" name="user">
            <button type="button" class="btn btn-primary ms-2 p-0" style="height: 30px; align-self: center; vertical-align: center; width: 100px;" onclick="setUserCookie()"">Add</button>
       </div>
