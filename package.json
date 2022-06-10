@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "addAllFiles": "git add.",
+    "addAllFiles": "git add .",
     "play": "node index.js",
     "commitWithMessage": "git commit -m ",
     "pushToGit": "git push -u origin main"

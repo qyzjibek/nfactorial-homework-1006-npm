@@ -23,6 +23,12 @@
             display: flex;
             align-items: center;
         }
+
+        .drop-btn {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+        }
     </style>
 
 </head>
@@ -36,8 +42,8 @@
             Set Default Cookies
           </button>
           <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-            <li><button type="button" class="btn btn-light" onclick="setCityCookie()">City</button></li>
-            <li><button type="button" class="btn btn-light" onclick="setCountryCookie()">Country</button></li>
+            <li><button type="button" class="btn btn-light drop-btn" onclick="setCityCookie()">City</button></li>
+            <li><button type="button" class="btn btn-light drop-btn" onclick="setCountryCookie()">Country</button></li>
           </ul>
         </div>
 
@@ -46,8 +52,8 @@
               Delete Default Cookies
             </button>
             <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <li><button type="button" class="btn btn-light" onclick="deleteCityCookie() ">City</button></li>
-              <li><button type="button" class="btn btn-light" onclick="deleteCountryCookie()">Country</button></li>
+              <li><button type="button" class="btn btn-light drop-btn" onclick="deleteCityCookie()">City</button></li>
+              <li><button type="button" class="btn btn-light drop-btn" onclick="deleteCountryCookie()">Country</button></li>
             </ul>
           </div>
       </div>
